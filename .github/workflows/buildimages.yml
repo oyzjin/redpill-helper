@@ -68,7 +68,8 @@ jobs:
           ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/redpill/rpext-index.json
           ./rp-helper.sh ext apollolake-7.0.1-42218 add https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/rpext-index.json
           ./rp-helper.sh ext apollolake-7.0.1-42218 add https://github.com/pocopico/rp-ext/raw/main/redpill-boot-wait/rpext-index.json
-          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/rtl8150/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/rpext-index.json
+        #  ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/rtl8150/rpext-index.json
         #  ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/bnx2x/rpext-index.json
 
       - name: create ds918 7.0.1 image
@@ -114,8 +115,8 @@ jobs:
           ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/redpill/rpext-index.json
           ./rp-helper.sh ext bromolow-7.0.1-42218 add https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/rpext-index.json
           ./rp-helper.sh ext bromolow-7.0.1-42218 add https://github.com/pocopico/rp-ext/raw/main/redpill-boot-wait/rpext-index.json
-          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/rtl8150/rpext-index.json
-          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/bnx2x/rpext-index.json
+     #     ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/rtl8150/rpext-index.json
+      #    ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/bnx2x/rpext-index.json
 
           
       - name: create ds3615xs 7.0.1 image
