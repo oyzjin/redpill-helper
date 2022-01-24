@@ -44,6 +44,32 @@ jobs:
       - name: build ds918 7.0.1
         run: |
           ./rp-helper.sh build apollolake-7.0.1-42218
+        
+      - name: 配置引导镜像
+        run: |
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://github.com/jumkey/redpill-load/raw/develop/redpill-virtio/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/mpt3sas/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000e/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/i40e/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/iavf/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/igb/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/igbvf/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbe/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbevf/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/megaraid_sas/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/mpt3sas/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/qlcnic/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/qla2xxx/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8101/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8125/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8168/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8169/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/redpill/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://github.com/pocopico/rp-ext/raw/main/redpill-boot-wait/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/rtl8150/rpext-index.json
+          ./rp-helper.sh ext apollolake-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/bnx2x/rpext-index.json
 
       - name: create ds918 7.0.1 image
         run: |
@@ -64,6 +90,33 @@ jobs:
       - name: build ds3615xs 7.0.1
         run: |
           ./rp-helper.sh build bromolow-7.0.1-42218
+        
+      - name: 配置引导镜像
+        run: |
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://github.com/jumkey/redpill-load/raw/develop/redpill-virtio/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/mpt3sas/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/e1000e/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/i40e/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/iavf/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/igb/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/igbvf/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbe/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/ixgbevf/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/megaraid_sas/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/mpt3sas/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/qlcnic/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/qla2xxx/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8101/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8125/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8168/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/r8169/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/redpill/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://github.com/jumkey/redpill-load/raw/develop/redpill-acpid/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://github.com/pocopico/rp-ext/raw/main/redpill-boot-wait/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/rtl8150/rpext-index.json
+          ./rp-helper.sh ext bromolow-7.0.1-42218 add https://raw.githubusercontent.com/pocopico/rp-ext/master/bnx2x/rpext-index.json
+
           
       - name: create ds3615xs 7.0.1 image
         run: |
